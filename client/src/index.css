@@ -43,6 +43,7 @@ h4 {
   padding: 16px;
   border-radius: 16px;
   display: flex;
+  width: 80%;
   align-items: center;
   transition: 500ms;
   cursor: pointer;
@@ -78,7 +79,7 @@ h4 {
 
 .todo .delete {
   position: absolute;
-  right: 16px;
+  right: -25%;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
@@ -128,17 +129,20 @@ h4 {
 
 .popup {
   /* width: 100px; */
-  padding: 0;
-  width: 40vw;
-  position: relative;
-  border-radius: 10px;
+  padding: 32px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  position: fixed;
+  border-radius: 16px;
   height: 200px;
   background-color: var(--light);
   display: flex;
   align-items: center;
-  margin-left:auto;
-  margin-right:auto;
-  
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 24px var(--dark);
   /* justify-content: center; */
 }
 
@@ -155,8 +159,8 @@ h4 {
   background-image: linear-gradient(to right, var(--primary), var(--secondary));
 }
 
-.addinput{
-  width:130%;
+.addinput {
+  width: 100%;
   font-size: 16px;
   margin-top: 20px;
   margin-left: 20px;
@@ -166,10 +170,21 @@ h4 {
   border-radius: 50px;
 }
 
-.content > h3{
-  color:#202B3E;
+.content>h3 {
+  color: #202B3E;
   font-size: 20px;
   position: absolute;
   top: 20px;
   left: 30px;
+}
+
+.edittodo {
+  padding: 10px;
+  margin: 10px;
+  margin-right: -21%;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 999px;
+  background-color: #8A4EFC;
 }
